@@ -18,8 +18,33 @@
 
     </script>
   </head>
-
   <body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">{{ name }}</a>
+        </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Neuroscience <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://sanjayankur31.github.io/planet-neuroscience/">Planet Neuroscience</a></li>
+                <li><a href="http://home.earthlink.net/~perlewitz/index.html">Computational Neuroscience on the web</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Options <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://github.com/sanjayankur31/planet-neuroscientists/issues/new">Suggest a new feed</a></li>
+                <li><a href="https://github.com/sanjayankur31/planet-neuroscientists">View Planet source</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="https://github.com/sanjayankur31/venus">View Venus source</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
     <div class="container">
       <div class="page-header">
         <h1>{{ name }}</h1>
@@ -29,7 +54,6 @@
         </p>
       </div>
     </div>
-
     <div class="container">
       <div class="col-md-9">
         {% for item in Items %}
@@ -64,6 +88,10 @@
       <p class="text-center text-muted">All content on this page is owned by their respective owners. The source code used to generate this page can be found <a href="{{ link }}">here</a>.</p>
       </div>
     </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
 

@@ -21,6 +21,32 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">{{ name }}</a>
+        </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Neuroscience <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://sanjayankur31.github.io/planet-neuroscientists/">Planet Neuroscientists</a></li>
+                <li><a href="http://home.earthlink.net/~perlewitz/index.html">Computational Neuroscience on the web</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Options <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://github.com/sanjayankur31/planet-neuroscience/issues/new">Suggest a new feed</a></li>
+                <li><a href="https://github.com/sanjayankur31/planet-neuroscience">View Planet source</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="https://github.com/sanjayankur31/venus">View Venus source</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
     <div class="container">
       <div class="page-header">
         <h1>{{ name }}</h1>
