@@ -13,7 +13,7 @@
 		<title type="html"<TMPL_IF title_language> xml:lang="<TMPL_VAR title_language>"</TMPL_IF>><TMPL_VAR title ESCAPE="HTML"></title>
 		<link href="<TMPL_VAR link ESCAPE="HTML">"/>
 		<id><TMPL_VAR id ESCAPE="HTML"></id>
-		<updated><TMPL_VAR date_iso></updated>
+		<updated><TMPL_VAR updated_iso></updated>
 		<content type="html"<TMPL_IF content_language> xml:lang="<TMPL_VAR content_language>"</TMPL_IF>>
                 <TMPL_IF channel_face>
 			&lt;img src=&quot;<TMPL_VAR channel_face ESCAPE="HTML">&quot; <TMPL_IF channel_facewidth>width=&quot;<TMPL_VAR channel_facewidth>&quot; </TMPL_IF><TMPL_IF channel_faceheight>height=&quot;<TMPL_VAR channel_faceheight>&quot; </TMPL_IF> alt=&quot;&quot; style=&quot;float: right;&quot;&gt;
@@ -51,8 +51,8 @@
 <TMPL_ELSE>
 			<id><TMPL_VAR channel_url ESCAPE="HTML"></id>
 </TMPL_IF>
-<TMPL_IF channel_updated_iso>
-			<updated><TMPL_VAR channel_updated_iso></updated>
+<TMPL_IF channel_last_updated_iso>
+			<updated><TMPL_VAR channel_last_updated_iso></updated>
 </TMPL_IF>
 <TMPL_IF channel_rights>
 			<rights type="html"><TMPL_VAR channel_rights ESCAPE="HTML"></rights>
