@@ -92,7 +92,9 @@
         <div class="col-md-9">
           <ul class="list-group">
             <TMPL_LOOP Items>
-              <li class="list-group-item"><h4><a href="<TMPL_VAR link>"><TMPL_IF title><TMPL_VAR title><TMPL_ELSE>Untitled Post</TMPL_IF></a></h4>
+              <li class="list-group-item">
+                <p class="text-right">-&nbsp;<a href="https://app.wallabag.it/bookmarklet?url=<TMPL_VAR link ESCAPE="HTML">" target="wallabagit"><small>Wallabag.it!</small></a>&nbsp;-&nbsp;<a href="http://instapaper.com/hello2?url=<TMPL_VAR link ESCAPE="HTML">" target="instapaper"><small>Save to Instapaper</small></a>&nbsp;-&nbsp;<a href="http://getpocket.com/save?url=<TMPL_VAR link ESCAPE="HTML">&title=<TMPL_VAR title>" target="pocket"><small>Save to Pocket</small></a>&nbsp;-</p>
+                <h4><a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_IF title><TMPL_VAR title><TMPL_ELSE>Untitled Post</TMPL_IF></a></h4>
 
                 <TMPL_VAR content>
 
